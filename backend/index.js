@@ -37,6 +37,12 @@ mongoose.connect(url,{useNewUrlParser: true, UseUnifiedTopology:true})
 .then(() => console.log("Successfully connected to Data Base"));
 app.listen(5000);
 
+app.use(cors({
+    origin:["https://vintage-items-limited-frontend.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+  ));
 app.use(cors());
 app.use(bodyParser.json({extended : true}));
 app.use(bodyParser.urlencoded({extended:true}));

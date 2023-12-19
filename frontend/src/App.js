@@ -18,10 +18,13 @@ import Signup from "./Pages.js/Signup";
 import Customers from "./component/Customers";
 import Pltable from "./Pages.js/Pltable";
 import Admintwo from "./component/Admintwo";
+import axios from "axios";
 
 function App() {
+  // axios.post('https://vintage-items-limited-api.vercel.app')
   return (
     <div>
+      
 <Context>
   {/* <BrowserRouter> */}
 <Routes>
