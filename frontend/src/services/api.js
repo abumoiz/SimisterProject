@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const url= "https://simister-project.vercel.app";
+const url= "https://simister-project-abumoizs-projects.vercel.app";
 
 export const addProduct=async(formdata)=>{
   return await axios.post(`${url}/Add_Form`,formdata);
