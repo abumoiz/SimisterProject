@@ -51,3 +51,6 @@ app.use('/View_Form', addProductDetails);
 app.use('/Signup', loginData);
 app.use('/Customers', loginData);
 app.use("/Images",express.static("Images"));
+app.get("/",(req,res)=>{
+  res.send("running");
+});
