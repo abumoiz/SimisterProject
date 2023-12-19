@@ -38,7 +38,7 @@ mongoose.connect(url,{useNewUrlParser: true, UseUnifiedTopology:true})
 app.listen(5000);
 
 app.use(cors({
-    origin:["https://vintage-items-limited-frontend.vercel.app"],
+    origin:["https://simister-project-sznv.vercel.app"],
     methods:["POST","GET"],
     credentials:true
   }
