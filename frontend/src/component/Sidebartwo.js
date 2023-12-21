@@ -63,13 +63,13 @@ function Sidebartwo() {
                 </Link> 
             </li>
             
-            <li className='sidebar-list-item'>
+            {/* <li className='sidebar-list-item'>
                 <a >
                 <img style={{height:"20px" , width:"20px" , marginRight:"15px", marginLeft:"20px"}} src='dashboardicon.webp'></img>
 
                      Dashboard
                 </a>
-            </li>
+            </li> */}
             <li className='sidebar-list-item'>
 
 <Link to="/audienceengagement">
