@@ -4,14 +4,38 @@ const PublishersTable = () => {
   const publishersData = [
     {
       id: 1,
-      name: 'Publisher 1',
-      articles: 10,
-      imageUrl: 'eyeicon.png', // Replace with the actual image path
+      name: 'harry maguire',
+      articles: 20,
+      imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
     },
     {
       id: 2,
-      name: 'Publisher 2',
+      name: 'shakiri',
       articles: 15,
+      imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
+    },
+    {
+      id: 2,
+      name: 'kimpembe',
+      articles: 13,
+      imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
+    },
+    {
+      id: 2,
+      name: 'zaire emery',
+      articles: 18,
+      imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
+    },
+    {
+      id: 2,
+      name: 'christensen',
+      articles: 21,
+      imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
+    },
+    {
+      id: 2,
+      name: 'xhaka',
+      articles: 7,
       imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
     },
     // Add more publishers as needed
@@ -21,18 +45,23 @@ const PublishersTable = () => {
     table: {
       width: '100%',
       borderCollapse: 'collapse',
+      backgroundImage: 'url("Animation2.svg")',
+      background:"grey",
       marginTop: '20px',
+      width:"76vw"
     },
     th: {
-      backgroundColor: '#f2f2f2',
+      
       padding: '12px',
       textAlign: 'left',
       borderBottom: '1px solid #ddd',
+      color:"black"
     },
     td: {
       padding: '12px',
       textAlign: 'left',
       borderBottom: '1px solid #ddd',
+      color:"black"
     },
     image: {
       width: '50px',

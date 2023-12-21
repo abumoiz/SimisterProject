@@ -72,8 +72,8 @@ function Customers() {
     return (
 
         <div style={{backgroundImage: 'url("Animation2.svg")'}}>
-        <Navbar/>
-      <Table style={{margin:"50px"}} striped bordered hover>
+        {/* <Navbar/> */}
+      <Table style={{margin:"50px" , width:"73vw"}} striped bordered hover>
         <thead>
           <th>Name</th>
           <th>Email</th>

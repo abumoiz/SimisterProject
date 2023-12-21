@@ -126,11 +126,13 @@ function Sidebartwo() {
             </li >
             
             <li className='sidebar-list-item'>
+            <Link to="/customers" >
                 <a >
                 <img style={{height:"20px" , width:"20px" , marginRight:"15px" , marginLeft:"20px"}} src='audienceicon.png'></img>
 
-                    Engagement
+                    Users
                 </a>
+                </Link>
             </li >
         </ul>
 

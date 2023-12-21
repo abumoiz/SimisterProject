@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import { addProduct } from "../services/api";
+import { BsAlignCenter } from "react-icons/bs";
 
 function Add() {
 
@@ -74,6 +75,8 @@ function Add() {
         border: "1px solid #ccc",
         borderRadius: "5px",
         boxShadow: "0px 0px 10px 0px rgba()0, 0, 0, 0.1",
+        marginLeft:"350px",
+        backgroundColor:"grey"
       }}
     >
       <h2 style={{color:"black"}}>Add Article</h2>
@@ -87,6 +90,7 @@ function Add() {
             Article Title
           </label>
           <input
+        
             type="text"
             name="articlename"
             value={articlename}
@@ -101,6 +105,7 @@ function Add() {
               outline: "none",
               fontSize: "14px",
               borderRadius: "3px",
+              marginLeft:"10px"
             }}
           />
         </div>
@@ -126,6 +131,7 @@ function Add() {
               outline: "none",
               fontSize: "14px",
               borderRadius: "3px",
+              marginLeft:"10px"
             }}
           />
         </div>
@@ -154,6 +160,7 @@ function Add() {
               outline: "none",
               fontSize: "14px",
               borderRadius: "3px",
+              marginLeft:"10px"
             }}
           />
         </div>
@@ -182,6 +189,7 @@ function Add() {
               outline: "none",
               fontSize: "14px",
               borderRadius: "3px",
+              marginLeft:"10px"
             }}
           />
         </div>
@@ -208,6 +216,7 @@ function Add() {
               outline: "none",
               fontSize: "14px",
               borderRadius: "3px",
+              marginLeft:"10px"
             }}
           />
         </div>
@@ -221,7 +230,8 @@ function Add() {
             borderRadius: "3px",
             padding: "10px 20px",
             cursor: "pointer",
-            color:"black"
+            color:"black",
+            marginLeft:"10px"
           }}
         >
           Add Product

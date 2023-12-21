@@ -59,11 +59,11 @@ function Navbar() {
           </Link>
         </li>
 
-        <li style={{ ...listItemStyle }}>
+        {/* <li style={{ ...listItemStyle }}>
           <Link to="/customers" style={navLinkStyle} activeStyle={listItemHoverStyle}>
            Customers
           </Link>
-        </li>
+        </li> */}
 
         <li style={{ ...listItemStyle }}>
           <Link to="/loginp" style={navLinkStyle} activeStyle={listItemHoverStyle}>
