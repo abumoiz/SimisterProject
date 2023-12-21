@@ -10,7 +10,7 @@ const PublishersTable = () => {
     },
     {
       id: 2,
-      name: 'shakiri',
+      name: 'martenelli',
       articles: 15,
       imageUrl: 'https://tse2.mm.bing.net/th?id=OIP.28jmE4s4hgzuaJnqvGffRQHaHa&pid=Api&P=0&h=220', // Replace with the actual image path
     },
