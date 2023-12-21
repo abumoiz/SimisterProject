@@ -39,7 +39,7 @@ app.listen(5000);
 
 app.use(cors({
     origin:["https://simister-project-sznv.vercel.app"],
-    methods:["POST","GET"],
+    methods:["POST","GET" , "DELETE" , "UPDATE"],
     credentials:true
   }
   ));
