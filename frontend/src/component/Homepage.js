@@ -40,6 +40,9 @@ import UserProfile from "../Pages.js/Profile";
 import Admintwo from "./Admintwo";
 import PublishersTable from "./PublishersTable";
 import AudienceSection from "./AudienceSection";
+import ResponsiveAudienceEngagementChart from "./AudienceEngagementChart";
+import AudienceEngagementChart from "./AudienceEngagementChart";
+import AudienceEngagement from "./AudienceEngagement";
 
 
 
@@ -97,7 +100,9 @@ return(
 
     <Footerweb/>
 
- 
+   
+
+
     
     {/* </Context> */}
    

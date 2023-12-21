@@ -3,6 +3,7 @@ import Add from "./Add";
 import Update from "./Update";
 import PublishersTable from "./PublishersTable";
 import Customers from "./Customers";
+import AudienceEngagement from "./AudienceEngagement";
 
 
 function Hometwo()
@@ -17,7 +18,7 @@ function Hometwo()
  <Route path ="/dashboard/update" element={<Update/>}/>
 <Route path="/dashboard/publisher" element={<PublishersTable/>} />
 <Route path="/customers"   element={<Customers/>} />
-
+<Route   path="/audienceengagement"   element={<AudienceEngagement/>}/>
 </Routes>
 
 

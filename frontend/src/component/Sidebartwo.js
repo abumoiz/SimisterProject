@@ -71,11 +71,15 @@ function Sidebartwo() {
                 </a>
             </li>
             <li className='sidebar-list-item'>
+
+<Link to="/audienceengagement">
+
                 <a >
                 <img style={{height:"20px" , width:"20px" , marginRight:"15px", marginLeft:"20px"}} src='audienceicon.png'></img>
 
                    Engagement
                 </a>
+                </Link>
             </li>
             {/* <li className='sidebar-list-item'>
                 <a >
