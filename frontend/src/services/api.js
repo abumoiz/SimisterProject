@@ -1,8 +1,8 @@
 import axios from "axios";
 
 
-// const url= "https://simister-project-abumoizs-projects.vercel.app";
-const url= "http://localhost:5000";
+const url= "https://simister-project-abumoizs-projects.vercel.app";
+// const url= "http://localhost:5000";
 
 
 export const addProduct=async(formdata)=>{

@@ -7,19 +7,14 @@ import loginStructureModel from "../Models/logindata.js";
 
 
 export const createlogindata= async(req, res)=>{
-    const {Name, Email,Password, Confirmpass }=req.body;
+    
 
-     const newLogin = new loginStructureModel({
-        Name,
-        Email,
-        Password,
-        Confirmpass,
-
-     });
+     
 
 try {
-
-  const check = await newLogin.findOne({Email: Email});
+  console.log("in add controller")
+  const {Name, Email,Password, Confirmpass }=req.body;
+  const check = await loginStructureModel.findOne({Email: Email});
   if (check)
   {
     
@@ -37,7 +32,7 @@ try {
     Confirmpass:hashedPassword,
 
    }
-   const user = new newLogin(User);
+   const user = new loginStructureModel(User);
 
    const savedUser = await user.save();
 
