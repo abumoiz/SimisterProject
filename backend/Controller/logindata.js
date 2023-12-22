@@ -12,7 +12,7 @@ export const createlogindata= async(req, res)=>{
      
 
 try {
-  console.log("in add controller")
+  console.log("in add")
   const {Name, Email,Password, Confirmpass }=req.body;
   const check = await loginStructureModel.findOne({Email: Email});
   if (check)
