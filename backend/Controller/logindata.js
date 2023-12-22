@@ -1,4 +1,11 @@
 import loginStructureModel from "../Models/logindata.js";
+
+
+
+
+
+
+
 export const createlogindata= async(req, res)=>{
     const {Name, Email,Password, Confirmpass }=req.body;
 
@@ -11,11 +18,40 @@ export const createlogindata= async(req, res)=>{
      });
 
 try {
-         await newLogin.save();
-         res.json(newLogin);
-     } catch (error) {
-         console.log("Not Saved...");
-     }
+
+  const check = await newLogin.findOne({Email: Email});
+  if (check)
+  {
+    
+    res.status(402).json({error:"User Already Exsists "});
+   
+  }
+  const salt = await bcrypt.genSalt();//default value is 10
+  const hashedPassword = await bcrypt.hash(Password,salt);
+  
+   const User = 
+   {
+    Name: Name,
+    Email: Email,
+    Password:hashedPassword,
+    Confirmpass:hashedPassword,
+
+   }
+   const user = new newLogin(User);
+
+   const savedUser = await user.save();
+
+   res.status(201).json(savedUser); // Send a response indicating success
+
+
+
+
+     
+  } 
+  catch (error) {
+    console.error("Error adding user:", error);
+    res.status(500).json({ message: "Failed to add user" }); // Send an error response
+  }
 };
 
 export const getlogin=async(req , res)=>{

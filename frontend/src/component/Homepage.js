@@ -43,6 +43,7 @@ import AudienceSection from "./AudienceSection";
 import ResponsiveAudienceEngagementChart from "./AudienceEngagementChart";
 import AudienceEngagementChart from "./AudienceEngagementChart";
 import AudienceEngagement from "./AudienceEngagement";
+import AnalyticsComponent from "./AnalyticsComponent";
 
 
 
@@ -101,7 +102,7 @@ return(
     <Footerweb/>
 
    
-
+{/* <AnalyticsComponent/> */}
 
     
     {/* </Context> */}
